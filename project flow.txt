@@ -1,0 +1,160 @@
+project(folder)
+|
+|---Frontend(folder)
+|
+|---Backend(folder)
+
+      server.js[npm init -y  --> npm install express nodemon cors ---> (mongodb)---> npm install mongoose]
+
+      config(folder)
+       |
+       |------db.js
+      models(folder)
+       |
+       |------user.js
+      controllers(folder)
+       |
+       |------userController.js
+      routers(folder)
+       |
+       |-----userRouters.js
+
+
+
+
+
+SCHEMA:
+ 
+Admin (College Admin)
+
+Admin controls the entire grievance system.
+Admin manages users and oversees all complaints.
+
+Admin creates:
+
+Student
+TPO
+HOD
+Complaint Assignment
+
+Admin actions:
+
+POST – create student / TPO / HOD
+PUT – update user details
+DELETE – delete user
+GET – get all users
+GET – get user by id
+GET – get all complaints
+PUT – assign complaint to authority
+PUT – close unresolved complaint
+
+Student
+
+Student is the primary complainant.
+Student submits and tracks grievances.
+
+Student creates:
+
+Complaint
+
+Student actions:
+
+POST – create complaint
+GET – get my complaints
+GET – get complaint by id
+GET – track complaint status
+
+TPO (Training & Placement Officer)
+
+TPO handles placement-related complaints.
+
+TPO actions:
+
+GET – get all placement complaints
+GET – get complaint by id
+PUT – respond to complaint
+PUT – update complaint status
+PUT – escalate complaint to HOD / Admin
+
+HOD (Head of Department)
+
+HOD handles academic and departmental complaints.
+
+HOD actions:
+
+GET – get department complaints
+GET – get complaint by id
+PUT – respond to complaint
+PUT – resolve complaint
+PUT – escalate complaint to Admin
+
+Complaint
+
+Complaint stores grievance details and tracking status.
+
+Complaint fields:
+
+studentId
+category
+subject
+description
+assignedTo
+status
+response
+createdAt
+updatedAt
+
+Complaint actions:
+
+POST – submit complaint
+GET – get complaint details
+PUT – update status
+PUT – add response
+PUT – escalate complaint
+PUT – close complaint
+
+Notification (Optional)
+
+Notification informs users about complaint updates.
+
+Notification actions:
+
+POST – send notification
+GET – get user notifications
+PUT – mark notification as read
+
+🔁 Complaint Flow (Short Format)
+
+Student → POST complaint
+
+System → Auto assign based on category
+
+TPO / HOD → Respond or escalate
+
+Admin → Monitor and close
+
+Student → Track status
+
+
+
+
+
+Project Flow
+
+Student registers
+→ Student logs in
+→ Student submits complaint (exam / academic / placement / server, etc.)
+→ System categorizes the complaint
+→ System assigns complaint to concerned authority (TPO / HOD / Admin)
+→ Authority logs in
+→ Authority views assigned complaints
+→ Authority responds to complaint
+→ Authority resolves or escalates complaint
+→ (If escalated) Complaint forwarded to higher authority
+→ Higher authority reviews complaint
+→ Complaint resolved
+→ Admin verifies resolution
+→ Complaint closed
+→ Student views status and response
+→ Complaint history stored
+→ Admin monitors and manages all users and complaints

@@ -1,0 +1,14 @@
+﻿[dotenv@17.2.4] injecting env (9) from .env -- tip: ΓÜÖ∩╕Å  override existing env vars with { override: true }
+[dotenv@17.2.4] injecting env (0) from .env -- tip: ≡ƒöÉ encrypt with Dotenvx: https://dotenvx.com
+Connected to MongoDB
+Original Created: 698b421cfb83db8dd4444e63
+Calling AI Service...
+[DEBUG] Exact subject match found: 698b421cfb83db8dd4444e63
+AI Result: {
+  "isDuplicate": true,
+  "originalComplaintId": "698b421cfb83db8dd4444e63",
+  "score": 100
+}
+Γ£à AI Detected Duplicate
+Returned ID: '698b421cfb83db8dd4444e63'
+Original ID: '698b421cfb83db8dd4444e63'
