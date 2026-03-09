@@ -1,0 +1,15 @@
+﻿[dotenv@17.2.4] injecting env (9) from .env -- tip: ΓÜÖ∩╕Å  write to custom object with { processEnv: myObject }
+[dotenv@17.2.4] injecting env (0) from .env -- tip: ≡ƒöÉ prevent committing .env to code: https://dotenvx.com/precommit
+Connected to MongoDB
+Original Created: 698b4249efb6f10f2c832ee4
+Calling AI Service...
+[DEBUG] Exact subject match found: 698b4249efb6f10f2c832ee4
+AI Result: {
+  "isDuplicate": true,
+  "originalComplaintId": "698b4249efb6f10f2c832ee4",
+  "score": 100
+}
+Γ£à AI Detected Duplicate
+Returned ID: '698b4249efb6f10f2c832ee4'
+Original ID: '698b4249efb6f10f2c832ee4'
+Γ£à IDs Match perfectly
